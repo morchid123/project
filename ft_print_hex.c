@@ -3,12 +3,17 @@
 int	ft_print_HeX(unsigned long n, char *base)
 {
 	int		count;
-	int len = ft_strlen(base);
+	int	tmp;
+	unsigned long base_leen = 16;     
 	count = 0;
-	if (n >= (unsigned long)len)
-		count = count + ft_print_HeX(n / len, base);
+	if (n >= base_leen)
+	{
+		tmp = ft_print_HeX(n / base_leen, base);
+		count += tmp;
+	}
+		
 
-	write(1, &base[n % len], 1);
+	write(1, &base[n % base_leen], 1);
 	count++;
 	return (count);
 }

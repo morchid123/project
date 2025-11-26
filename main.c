@@ -2,24 +2,20 @@
 
 int main()
 {
-    
-   // ft_printf("%d\n%i\n%c\n%c",5 + 5,10,'M','J');
-//    ft_printf("%u\n%u\n",4294967295U , -1);
-//    printf("%u\n%i\n",4294967295U , -1);
-  // int n = ft_printf("%s\n","a");
 
-    // ft_printf("%%%%\n");
-    // printf("%%%%\n");
-
-
-   
-    ft_printf("adr diali = %X\n",16);
-    printf("adr sm = %X\n",16);
-//      printf("adr s = %p\n",s+2);
-//  printf("adr s = %p\n",s+3);
-
-
-
+	
+  
+	 int t1 = ft_printf("%d",NULL);
+	 printf("\n");
+	int t2 =	printf("%d",NULL);
+	 printf("\n");
+	printf("test diali returned this result %d\n",t1);
+		printf("test org returned this result %d\n",t2);
 
 
 }
+
+
+
+// output 613
+// return f 1 + 1 + 1
